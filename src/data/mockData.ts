@@ -1,11 +1,7 @@
 import { Plan, ExtraService, GalleryItem, JumpEvent, Review, FaqItem, Booking, TimeSlot } from '../types';
-import heroImage from '../assets/images/skyjump_hero_banner_1785277582675.jpg';
-import parachuteImage from '../assets/images/skyjump_parachute_open_1785277594205.jpg';
-import teamImage from '../assets/images/skyjump_team_instructors_1785277605352.jpg';
-
-export const HERO_IMAGE = heroImage;
-export const PARACHUTE_IMAGE = parachuteImage;
-export const TEAM_IMAGE = teamImage;
+export const HERO_IMAGE = '/images/skyjump_hero_banner_1785277582675.jpg';
+export const PARACHUTE_IMAGE = '/images/skyjump_parachute_open_1785277594205.jpg';
+export const TEAM_IMAGE = '/images/skyjump_team_instructors_1785277605352.jpg';
 
 export const PLANS: Plan[] = [
   {
