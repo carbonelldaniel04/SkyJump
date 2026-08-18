@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { TEAM_IMAGE } from '../data/mockData';
 import { Review } from '../types';
 import { Star, MessageSquarePlus, Quote, CheckCircle, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -30,7 +31,7 @@ export const ReviewsSection: React.FC<ReviewsSectionProps> = ({ reviews, onAddRe
       date: 'Hace un momento',
       isApproved: true, // Auto-approve for instant user feedback
       location: location || 'Cliente Verificado',
-      photoUrl: `https://images.unsplash.com/photo-${1500000000000 + Math.floor(Math.random() * 100000)}?q=80&w=200&auto=format&fit=crop`,
+      photoUrl: TEAM_IMAGE,
     };
 
     onAddReview(newRev);
@@ -89,7 +90,7 @@ export const ReviewsSection: React.FC<ReviewsSectionProps> = ({ reviews, onAddRe
 
               <div className="pt-4 border-t border-slate-200/80 flex items-center gap-3">
                 <img
-                  src={rev.photoUrl || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop'}
+                  src={rev.photoUrl || TEAM_IMAGE}
                   alt={rev.author}
                   referrerPolicy="no-referrer"
                   className="w-10 h-10 rounded-full object-cover border-2 border-[#1E88E5]"
