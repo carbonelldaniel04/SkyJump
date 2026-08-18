@@ -1,0 +1,6 @@
+{
+  "name": "SkyJump Experience",
+  "description": "Landing Page, Reservas Online de Saltos en Paracaídas y Panel de Administración",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
