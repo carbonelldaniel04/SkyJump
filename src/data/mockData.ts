@@ -1,8 +1,11 @@
 import { Plan, ExtraService, GalleryItem, JumpEvent, Review, FaqItem, Booking, TimeSlot } from '../types';
+import heroImage from '../assets/images/skyjump_hero_banner_1785277582675.jpg';
+import parachuteImage from '../assets/images/skyjump_parachute_open_1785277594205.jpg';
+import teamImage from '../assets/images/skyjump_team_instructors_1785277605352.jpg';
 
-export const HERO_IMAGE = '/src/assets/images/skyjump_hero_banner_1785277582675.jpg';
-export const PARACHUTE_IMAGE = '/src/assets/images/skyjump_parachute_open_1785277594205.jpg';
-export const TEAM_IMAGE = '/src/assets/images/skyjump_team_instructors_1785277605352.jpg';
+export const HERO_IMAGE = heroImage;
+export const PARACHUTE_IMAGE = parachuteImage;
+export const TEAM_IMAGE = teamImage;
 
 export const PLANS: Plan[] = [
   {
@@ -198,7 +201,7 @@ export const INITIAL_GALLERY: GalleryItem[] = [
     title: 'Adrenalina pura en pleno salto',
     category: 'Caída Libre',
     type: 'photo',
-    url: 'https://images.unsplash.com/photo-1521673132589-32219760a927?q=80&w=1200&auto=format&fit=crop',
+    url: PARACHUTE_IMAGE,
     description: 'Sensación de ingravidez a 200 kilómetros por hora.'
   },
   {
@@ -206,7 +209,7 @@ export const INITIAL_GALLERY: GalleryItem[] = [
     title: 'Aterrizaje suave sobre césped',
     category: 'Aterrizajes',
     type: 'photo',
-    url: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1200&auto=format&fit=crop',
+    url: TEAM_IMAGE,
     description: 'Touchdown perfecto junto al equipo de apoyo en tierra.'
   },
   {
@@ -214,7 +217,7 @@ export const INITIAL_GALLERY: GalleryItem[] = [
     title: 'Vista aérea de la pista y sierras',
     category: 'Paisajes',
     type: 'photo',
-    url: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop',
+    url: HERO_IMAGE,
     description: 'Un marco natural imponente para tu experiencia en el aire.'
   },
   {
@@ -222,7 +225,7 @@ export const INITIAL_GALLERY: GalleryItem[] = [
     title: 'Salto Grupal de Instructores',
     category: 'Saltos',
     type: 'photo',
-    url: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200&auto=format&fit=crop',
+    url: PARACHUTE_IMAGE,
     description: 'Formaciones de paracaidismo deportivo en el cielo azul.'
   },
   {
@@ -287,7 +290,7 @@ export const INITIAL_REVIEWS: Review[] = [
     date: 'Hace 3 días',
     isApproved: true,
     location: 'Buenos Aires',
-    photoUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop'
+    photoUrl: TEAM_IMAGE
   },
   {
     id: 'rev-2',
@@ -297,7 +300,7 @@ export const INITIAL_REVIEWS: Review[] = [
     date: 'Hace 1 semana',
     isApproved: true,
     location: 'Córdoba',
-    photoUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop'
+    photoUrl: HERO_IMAGE
   },
   {
     id: 'rev-3',
@@ -307,7 +310,7 @@ export const INITIAL_REVIEWS: Review[] = [
     date: 'Hace 2 semanas',
     isApproved: true,
     location: 'Rosario',
-    photoUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop'
+    photoUrl: PARACHUTE_IMAGE
   },
   {
     id: 'rev-4',
@@ -317,7 +320,7 @@ export const INITIAL_REVIEWS: Review[] = [
     date: 'Hace 3 semanas',
     isApproved: true,
     location: 'Mendoza',
-    photoUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop'
+    photoUrl: TEAM_IMAGE
   }
 ];
 
